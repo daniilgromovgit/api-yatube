@@ -31,7 +31,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return self.text[:25] + '...' if len(self.text) > 25 else self.text
+        return self.text[:25]
 
 
 class Comment(models.Model):
